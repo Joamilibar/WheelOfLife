@@ -1,0 +1,36 @@
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wheel {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.sliders {
+  margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.slider label {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.slider input {
+  margin-right: 10px;
+}
+
+.slider span {
+  width: 20px;
+  text-align: center;
+}
