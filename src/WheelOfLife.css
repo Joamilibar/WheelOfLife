@@ -22,8 +22,10 @@
 }
 
 .slider label {
+  font-weight: bold;
+  text-align: left;
   margin-right: 10px;
-  width: 100px;
+  width: 200px;
 }
 
 .slider input {

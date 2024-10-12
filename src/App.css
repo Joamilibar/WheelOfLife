@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /*  background-image: url(../public/logo-nurvick.cdr);
+  background-size: cover; */
 }
 
 .App-logo {
@@ -9,7 +11,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
