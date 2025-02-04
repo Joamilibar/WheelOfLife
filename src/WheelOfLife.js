@@ -22,12 +22,12 @@ const WheelOfLife = () => {
     const sectionNames = [
         'Familia',
         'Trabajo, Empleo',
-        'Pareja, Relaciones Amorosas',
+        'Pareja',
         'Cuidado del Hogar',
         'Amistades y Vida Social',
         'Cuidado de Otros',
         'Salud Física y Bienestar',
-        'Crecimiento Personal y Espiritual'
+        'Crecimiento Personal'
     ];
 
     const handleRatingChange = (index, value) => {
@@ -78,7 +78,7 @@ const WheelOfLife = () => {
 
                     {/* Mostrar la rueda solo si `showWheel` es verdadero */}
                     {showWheel && (
-                        <svg viewBox="0 0 200 200" width="500" height="500" className="wheel">
+                        <svg viewBox="0 0 200 200" width="400" height="400" className="wheel">
                             {[...Array(numSections)].map((_, sectionIndex) => {
                                 const angle = (sectionIndex * 360) / numSections; // Ángulo de cada sección
                                 const rotation = `rotate(${angle} 100 100)`; // Rotación para la sección
@@ -122,8 +122,8 @@ const WheelOfLife = () => {
                                 const angle = (sectionIndex * 360) / numSections;
                                 const offset = 50; // Distancia del texto al borde de la rueda
 
-                                const textX = 100 + offset * Math.cos((angle - 90) * (Math.PI / 180));
-                                const textY = 100 + offset * Math.sin((angle - 90) * (Math.PI / 180));
+                                const textX = 100 + offset * Math.cos((angle - -25) * (Math.PI / 180));
+                                const textY = 100 + offset * Math.sin((angle - -25) * (Math.PI / 180));
 
                                 return (
                                     <text
@@ -134,8 +134,8 @@ const WheelOfLife = () => {
                                         fontSize="6"
                                         fontWeight="bold"
                                         textAnchor="middle"
-                                        dominantBaseline="right"
-                                        transform={`rotate(${angle + 90}, ${textX}, ${textY})`} // Ajustar rotación del texto
+                                        dominantBaseline="middle"
+                                        transform={`rotate(${angle + 25}, ${textX}, ${textY})`} // Ajustar rotación del texto
                                     >
                                         {name}
                                     </text>
