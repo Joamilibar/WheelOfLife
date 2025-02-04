@@ -78,7 +78,7 @@ const WheelOfLife = () => {
 
                     {/* Mostrar la rueda solo si `showWheel` es verdadero */}
                     {showWheel && (
-                        <svg viewBox="0 0 200 200" width="600" height="600" className="wheel">
+                        <svg viewBox="0 0 200 200" width="500" height="500" className="wheel">
                             {[...Array(numSections)].map((_, sectionIndex) => {
                                 const angle = (sectionIndex * 360) / numSections; // Ángulo de cada sección
                                 const rotation = `rotate(${angle} 100 100)`; // Rotación para la sección
