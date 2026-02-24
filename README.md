@@ -1,22 +1,22 @@
-# 🎯 Rueda de la Vida
+# Rueda de la Vida
 
 Herramienta interactiva para evaluar y visualizar el equilibrio en las diferentes áreas de tu vida. Valora del 0 al 10 cada sección y visualiza tus resultados en un gráfico radial.
 
-## ✨ Características
+## Características
 
-- 🎛️ **8 áreas de vida** con controles deslizantes interactivos
-- 📊 **Gráfico radial SVG** con secciones coloreadas por nivel
-- 👀 **Mostrar/Ocultar** la rueda con un botón
-- 🎨 **Colores diferenciados** para cada área de vida
+- **8 áreas de vida** con controles deslizantes interactivos
+- **Gráfico radial SVG** con secciones coloreadas por nivel
+- **Mostrar/Ocultar** la rueda con un botón
+- **Colores diferenciados** para cada área de vida
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - [React](https://reactjs.org/) 18
 - SVG para el gráfico radial
 - [Prettier](https://prettier.io/) para formato de código
 - [Testing Library](https://testing-library.com/) para tests
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 src/
@@ -43,7 +43,7 @@ src/
 └── setupTests.js
 ```
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Requisitos previos
 
@@ -84,7 +84,7 @@ Genera la versión de producción optimizada en la carpeta `build/`.
 **Nota: esta operación es irreversible.**\
 Expone las configuraciones internas de webpack, Babel y ESLint para personalización avanzada.
 
-## 🧪 Tests
+## Tests
 
 El proyecto incluye tests automatizados con Testing Library:
 
@@ -96,7 +96,7 @@ npm test
 npx react-scripts test --watchAll=false --verbose
 ```
 
-## 📝 Formato de Código
+## Formato de Código
 
 El proyecto usa Prettier para mantener un formato consistente:
 
@@ -105,6 +105,6 @@ El proyecto usa Prettier para mantener un formato consistente:
 npx prettier --write "src/**/*.{js,jsx,css}"
 ```
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es privado.
