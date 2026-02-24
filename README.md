@@ -1,71 +1,110 @@
-# Getting Started with Create React App
+# 🎯 Rueda de la Vida
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Herramienta interactiva para evaluar y visualizar el equilibrio en las diferentes áreas de tu vida. Valora del 0 al 10 cada sección y visualiza tus resultados en un gráfico radial.
 
-## Available Scripts
+## ✨ Características
 
-In the project directory, you can run:
+- 🎛️ **8 áreas de vida** con controles deslizantes interactivos
+- 📊 **Gráfico radial SVG** con secciones coloreadas por nivel
+- 👀 **Mostrar/Ocultar** la rueda con un botón
+- 🎨 **Colores diferenciados** para cada área de vida
 
-### `npm start`
+## 🛠️ Tecnologías
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React](https://reactjs.org/) 18
+- SVG para el gráfico radial
+- [Prettier](https://prettier.io/) para formato de código
+- [Testing Library](https://testing-library.com/) para tests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Estructura del Proyecto
 
-### `npm test`
+```
+src/
+├── assets/                          # Recursos estáticos
+│   ├── logo-nurvick.png
+│   └── logo-nurvick.svg
+├── components/
+│   └── WheelOfLife/                 # Componente principal
+│       ├── index.js                 # Re-export
+│       ├── WheelOfLife.jsx          # Orquestador (estado + layout)
+│       ├── WheelOfLife.css          # Estilos del componente
+│       ├── WheelOfLife.test.jsx     # Suite de tests (11 tests)
+│       ├── WheelChart.jsx           # Gráfico SVG completo
+│       ├── WheelSection.jsx         # Segmento radial individual
+│       ├── WheelLabels.jsx          # Etiquetas de texto en la rueda
+│       ├── RatingSliders.jsx        # Controles deslizantes
+│       └── wheelConfig.js           # Constantes y configuración
+├── App.jsx
+├── App.css
+├── App.test.jsx
+├── index.js
+├── index.css
+├── reportWebVitals.js
+└── setupTests.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Inicio Rápido
 
-### `npm run build`
+### Requisitos previos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/) (v16 o superior)
+- npm (incluido con Node.js)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clonar el repositorio
+git clone https://github.com/Joamilibar/WheelOfLife.git
+cd WheelOfLife
 
-### `npm run eject`
+# Instalar dependencias
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Comandos Disponibles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ejecuta la app en modo desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+La página se recarga automáticamente cuando guardas cambios.
 
-## Learn More
+#### `npm test`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ejecuta los tests en modo interactivo.\
+Actualmente hay **13 tests** que cubren renderizado, interacción con sliders y la visualización de la rueda.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### `npm run build`
 
-### Code Splitting
+Genera la versión de producción optimizada en la carpeta `build/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### `npm run eject`
 
-### Analyzing the Bundle Size
+**Nota: esta operación es irreversible.**\
+Expone las configuraciones internas de webpack, Babel y ESLint para personalización avanzada.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧪 Tests
 
-### Making a Progressive Web App
+El proyecto incluye tests automatizados con Testing Library:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+# Ejecutar todos los tests
+npm test
 
-### Advanced Configuration
+# Ejecutar tests con reporte detallado
+npx react-scripts test --watchAll=false --verbose
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 Formato de Código
 
-### Deployment
+El proyecto usa Prettier para mantener un formato consistente:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+# Formatear todos los archivos
+npx prettier --write "src/**/*.{js,jsx,css}"
+```
 
-### `npm run build` fails to minify
+## 📄 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# WheelOfLife
+Este proyecto es privado.
